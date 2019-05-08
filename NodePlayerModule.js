@@ -37,7 +37,7 @@ class NodePlayerView extends Component {
     start() {
         UIManager.dispatchViewManagerCommand(
             findNodeHandle(this.refs[RCT_VIDEO_REF]),
-            RCTNodePlayer.Commands.start,
+            this.RCTNodePlayer.Commands.start,
             null
         );
     }
@@ -45,7 +45,7 @@ class NodePlayerView extends Component {
     stop() {
         UIManager.dispatchViewManagerCommand(
             findNodeHandle(this.refs[RCT_VIDEO_REF]),
-            RCTNodePlayer.Commands.stop,
+            this.RCTNodePlayer.Commands.stop,
             null
         );
     }
